@@ -525,7 +525,7 @@ now if we go to the VIP address on port 7000, the haproxy dashboard will display
 
 ## sources
 
-https://www.linode.com/docs/guides/comparison-of-high-availability-postgresql-solutions/
-https://github.com/libremomo/devops-notes/blob/main/HA-Postgres-Cluster/Step-by-Step-Guide-to-Deploy-a-Highly-Available-Postgres-Cluster.md?plain=1
-https://adamtheautomator.com/patroni/
-https://www.linode.com/docs/guides/create-a-highly-available-postgresql-cluster-using-patroni-and-haproxy/
+- https://www.linode.com/docs/guides/comparison-of-high-availability-postgresql-solutions/
+- https://github.com/libremomo/devops-notes/blob/main/HA-Postgres-Cluster/Step-by-Step-Guide-to-Deploy-a-Highly-Available-Postgres-Cluster.md?plain=1
+- https://adamtheautomator.com/patroni/
+- https://www.linode.com/docs/guides/create-a-highly-available-postgresql-cluster-using-patroni-and-haproxy/
