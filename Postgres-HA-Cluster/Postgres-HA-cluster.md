@@ -164,9 +164,9 @@ the output displays the current status of the resources managed by the cluster. 
 
 - `Resource Group: HAproxyGroup:`
 
-`* virtual_ip        (ocf:heartbeat:IPaddr2):         Started node3`
+    `* virtual_ip        (ocf:heartbeat:IPaddr2):         Started node3`
 
-`* haproxy   (systemd:haproxy):       Started node3`
+    `* haproxy   (systemd:haproxy):       Started node3`
 
 
 after successfully setting up PCS, we configure the HAproxy by editing /etc/haproxy/haproxy.cfg file:
@@ -479,6 +479,11 @@ sudo chown -R postgres:postgres /data/patroni
 
 sudo chmod 700 /data/patroni
 ```
+
+also check patroni service to ensure it is using the correct config file in `ExecStart` section:
+
+`ExecStart=/usr/bin/patroni /etc/patroni/config.yml`
+
 
 Now we can start the Patroni service on all related nodes:
 
