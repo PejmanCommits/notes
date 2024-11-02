@@ -72,9 +72,9 @@ This implementation consists of 9 Nodes, following best practices of concept to 
 |  4  | hap1 | HAProxy, PaceMaker |      4      |    8     |    25     |  1  | 192.168.34.132 | Debian 12 |
 |  5  | hap2 | HAProxy, PaceMaker  |      4      |    8     |    25     |  1  | 192.168.34.133 | Debian 12 |
 |  5  | hap2 | HAProxy, PaceMaker  |      4      |    8     |    25     |  1  | 192.168.34.134 | Debian 12 |
-|  5  | hap2 | etcd1  |      4      |    8     |    25     |  1  | 192.168.34.137 | Debian 12 |
-|  5  | hap2 | etcd2  |      4      |    8     |    25     |  1  | 192.168.34.138 | Debian 12 |
-|  5  | hap2 | etcd3  |      4      |    8     |    25     |  1  | 192.168.34.139 | Debian 12 |
+|  5  | etcd1 | etcd1  |      4      |    8     |    25     |  1  | 192.168.34.137 | Debian 12 |
+|  5  | etcd2 | etcd2  |      4      |    8     |    25     |  1  | 192.168.34.138 | Debian 12 |
+|  5  | etcd3 | etcd3  |      4      |    8     |    25     |  1  | 192.168.34.139 | Debian 12 |
 
 
 
