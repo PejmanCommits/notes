@@ -129,6 +129,7 @@ we can setup cluster by running:
 `pcs status cluster`
 
 `pcs property set stonith-enabled=false`
+
 `pcs property set no-quorum-policy=ignore`
 
 
@@ -277,14 +278,12 @@ Before configuring the patroni nodes, it is necessary to set up the infrastructu
 
 To configure each etcd node, it is necessary to first delete the files located in the /var/lib/etcd/ directory. The presence of default files in this path causes all etcd nodes to be created with the same UUID, and for this reason, they cannot recognize each other as members of a cluster.
 
-`sudo systemctl stop etcd`
-
 ```
+sudo systemctl stop etcd
 sudo mkdir /data/etcd
 sudo chown -R etcd:etcd /data/
+sudo rm -rf /var/lib/etcd/*
 ```
-
-`sudo rm -rf /var/lib/etcd/*`
 
 Then we open the file located at etc/default/etcd/ in the editor and add the following lines to it. be sure to change the values according to your setup:
 
