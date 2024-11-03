@@ -514,7 +514,8 @@ Finally, we disable the automatic execution of the Postgres service after the sy
 `sudo systemctl disable --now postgresql`
 
 
-now if we go to the VIP address on port 7000, the haproxy dashboard will display the status of nodes.
+now if we go to the VIP address on port 7000, the haproxy dashboard will display the status of nodes:
+
     - one leader in production
     - two replica nodes listening for read operations in standby section except the leader
     - and read requests to the leader node if is_primary request has been used
